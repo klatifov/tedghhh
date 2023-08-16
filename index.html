@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="image1" src="./tree-736885_1280.jpg" alt="" style="width: 500px;">
+    <button id="duyme1">click to add</button>
+    <button id="duyme2">click to delete</button>
+
+    <script>
+    let myDuyme1 = document.getElementById("duyme1");
+    let myDuyme2 = document.getElementById("duyme2");
+
+    myDuyme1.addEventListener("click", function(){
+        document.querySelector(".image1").style.display = "block";
+    });
+
+        myDuyme2.addEventListener("click",function(){
+            document.querySelector(".image1").style.display = "none"
+        });
+
+    </script>
+</body>
+</html>
